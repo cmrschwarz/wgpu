@@ -267,7 +267,10 @@ fn choose_config(
                     log::warn!("EGL says it can present to the window but not natively",);
                 }
                 // Android emulator can't natively present either.
-                let tier_threshold = if cfg!(target_os = "android") || cfg!(windows) {
+                let tier_threshold = if cfg!(target_os = "android")
+                    || cfg!(windows)
+                    || cfg!(feature = "egl_ignore_native_renderable")
+                {
                     1
                 } else {
                     2

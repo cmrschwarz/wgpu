@@ -63,6 +63,7 @@ dxc_shader_compiler = ["hassle-rs"]
 renderdoc = ["libloading", "renderdoc-sys"]
 fragile-send-sync-non-atomic-wasm = ["wgt/fragile-send-sync-non-atomic-wasm"]
 link = ["metal/link"]
+egl_ignore_native_renderable = []
 
 [[example]]
 name = "halmark"
