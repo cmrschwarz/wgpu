@@ -273,7 +273,7 @@ pub struct Options {
 impl Default for Options {
     fn default() -> Self {
         Options {
-            version: Version::new_gles(310),
+            version: Version::new_gles(320),
             writer_flags: WriterFlags::ADJUST_COORDINATE_SPACE,
             binding_map: BindingMap::default(),
             zero_initialize_workgroup_memory: true,
